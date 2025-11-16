@@ -1,0 +1,743 @@
+  /* Enhanced form inputs with 3D effect */
+  #contact .form-control {
+    background: rgba(255, 255, 255, 0.98) !important;
+    border: 2px solid rgba(13, 110, 253, 0.3) !important;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+    position: relative !important;
+    z-index: 12 !important;
+    color: #000 !important;
+  }
+
+  #contact .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  #contact .form-control:focus {
+    background: rgba(255, 255, 255, 1) !important;
+    border-color: rgba(13, 110, 253, 0.8) !important;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4),
+                0 0 0 3px rgba(13, 110, 253, 0.15),
+                inset 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-2px);
+    outline: none !important;
+    color: #000 !important;
+  }
+
+  /* Floating labels with smooth transition */
+  #contact .form-floating > label {
+    color: rgba(108, 117, 125, 0.9) !important;
+    transition: all 0.3s ease;
+    z-index: 5 !important;
+    pointer-events: none !important;
+  }
+
+  #contact .form-floating > .form-control:focus ~ label,
+  #contact .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: rgba(13, 110, 253, 0.95) !important;
+    transform: scale(0.95) !important;
+  }
+
+
+
+
+/* Color variables */
+:root {
+    --white-color: #fff;
+    --bg-color: #fff;
+    --gray-color: #ccc;
+  }
+  
+  /* Changing background color */
+  body {
+    background: var(--bg-color) !important;
+  }
+  
+  /* Navbar with glassmorphism */
+  header {
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background: rgba(33, 37, 41, 0.8) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Changing link color */
+  .nav-item .nav-link {
+    color: var(--white-color);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(13, 110, 253, 0.8), transparent);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item .nav-link:hover {
+    color: rgba(13, 110, 253, 0.9) !important;
+    transform: translateY(-2px);
+  }
+  
+  .nav-item .nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+  
+  .navbar-brand {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    transform: scale(1.05);
+    text-shadow: 0 2px 15px rgba(13, 110, 253, 0.5);
+  }
+  
+  /* Hero section background image with 3D effects */
+  .hero {
+    height: 100vh;
+    background-image: url("/IMG_8129.png");
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.2) 0%, rgba(108, 117, 125, 0.3) 100%);
+    z-index: 0;
+  }
+  
+  .hero > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* 3D Hero Text Effects */
+  .hero h1 {
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6),
+                 0 0 30px rgba(13, 110, 253, 0.4),
+                 3px 3px 6px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 1s ease-out;
+    letter-spacing: 2px;
+  }
+  
+  .hero h2 {
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.7),
+                 0 0 40px rgba(13, 110, 253, 0.5),
+                 4px 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.2s ease-out;
+    letter-spacing: 1px;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 3D Hero Button */
+  .hero .btn-primary {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.95) 0%, rgba(108, 117, 125, 0.9) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+                0 15px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: perspective(500px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1.4s ease-out;
+  }
+  
+  .hero .btn-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+  
+  .hero .btn-primary:hover::before {
+    left: 100%;
+  }
+  
+  .hero .btn-primary:hover {
+    transform: perspective(500px) translateY(-8px) translateZ(30px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.7),
+                0 0 0 2px rgba(255, 255, 255, 0.2) inset,
+                0 20px 50px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, rgba(13, 110, 253, 1) 0%, rgba(108, 117, 125, 1) 100%);
+  }
+  
+  .hero .btn-primary:active {
+    transform: perspective(500px) translateY(-4px) translateZ(15px) scale(1.02);
+  }
+  
+  /* 3D Skills Section Cards */
+  #skills .card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(13, 110, 253, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(255, 255, 255, 0.8) inset,
+                0 15px 40px rgba(13, 110, 253, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #skills .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(13, 110, 253, 0.8), rgba(108, 117, 125, 0.8));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  
+  #skills .card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  #skills .card:hover {
+    transform: perspective(1000px) translateY(-15px) rotateX(3deg) translateZ(20px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25),
+                0 0 0 1px rgba(255, 255, 255, 1) inset,
+                0 25px 60px rgba(13, 110, 253, 0.2);
+  }
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #skills .card:hover i {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.4);
+  }
+  
+  #skills .card-title {
+    transition: all 0.3s ease;
+  }
+  
+  #skills .card:hover .card-title {
+    color: rgba(13, 110, 253, 0.9);
+    transform: translateY(-3px);
+  }
+  
+  /* Portfolio section - ensure uniform card sizing */
+  #portfolio .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #portfolio .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 500px;
+  }
+  
+  #portfolio img.portfolio-img {
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+  }
+  
+  #portfolio .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 250px;
+  }
+  
+  #portfolio .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #portfolio .card-text {
+    flex: 1;
+    min-height: 100px;
+    max-height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1rem;
+  }
+  
+  #portfolio .card-body > .d-flex.justify-content-center {
+    margin-top: auto;
+    flex-shrink: 0;
+  }
+  
+  /* 3D Portfolio Cards Enhancement */
+  #portfolio .card {
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(13, 110, 253, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12),
+                0 0 0 1px rgba(255, 255, 255, 0.9) inset,
+                0 15px 40px rgba(13, 110, 253, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: perspective(1000px) rotateX(0deg) translateZ(0);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #portfolio .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(13, 110, 253, 0.6), rgba(108, 117, 125, 0.6));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    z-index: 2;
+  }
+  
+  #portfolio .card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  #portfolio .card:hover {
+    transform: perspective(1000px) translateY(-12px) rotateX(2deg) translateZ(15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 1) inset,
+                0 25px 60px rgba(13, 110, 253, 0.15);
+  }
+  
+  #portfolio .card:hover img.portfolio-img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+  
+  #portfolio img.portfolio-img {
+    transition: all 0.4s ease;
+  }
+  
+  /* 3D Portfolio Buttons */
+  #portfolio .btn-outline-primary,
+  #portfolio .btn-outline-secondary {
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+  }
+  
+  #portfolio .btn-outline-primary:hover,
+  #portfolio .btn-outline-secondary:hover {
+    transform: translateY(-3px) translateZ(10px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+  }
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+  /* Timeline background line */
+  #about .img::before {
+    content: "";
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background: var(--gray-color);
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 140px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3),
+                0 0 0 3px rgba(255, 255, 255, 0.2) inset;
+  }
+  
+  #about .hire-text h2:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 35px rgba(13, 110, 253, 0.5),
+                0 0 0 4px rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  /* 3D About Section Images */
+  #about img {
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #about img:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.3);
+  }
+  
+  /* Enhanced Timeline */
+  #about .img::before {
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+  }
+  
+  /* 3D Social Icons */
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateZ(0);
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px) translateZ(15px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.4);
+  }
+  
+  footer .social-icons a {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  footer .social-icons a:hover {
+    transform: translateY(-4px) translateZ(10px) scale(1.15);
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+  }
+  
+  /* 3D CV Section */
+  #cv img {
+    width: 230px;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(255, 255, 255, 0.9);
+  }
+  
+  #cv img:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(13, 110, 253, 0.3);
+    border-color: rgba(13, 110, 253, 0.4);
+  }
+  
+  #cv .card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+  }
+  
+  #cv .card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Contact section background image */
+  #contact {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url("/cont.webp");
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Gradient overlay for better depth */
+  #contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.3) 0%, rgba(108, 117, 125, 0.4) 50%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 0;
+  }
+  
+  /* Animated gradient overlay for dynamic effect */
+  #contact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(13, 110, 253, 0.2) 0%, transparent 50%);
+    animation: gradientShift 8s ease-in-out infinite alternate;
+    z-index: 0;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      transform: translateX(0) translateY(0);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(20px) translateY(-20px);
+      opacity: 0.8;
+    }
+  }
+  
+  /* Container with glassmorphism effect */
+  #contact .container-xxl {
+    position: relative;
+    z-index: 1;
+    padding: 4rem 0;
+  }
+  
+  /* Glassmorphism form container */
+  #contact form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+                0 20px 60px rgba(13, 110, 253, 0.2);
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #contact form:hover {
+    transform: perspective(1000px) translateY(-10px) rotateX(2deg);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.3) inset,
+                0 30px 80px rgba(13, 110, 253, 0.3);
+  }
+  
+  /* Enhanced form inputs with 3D effect */
+  #contact .form-control {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(13, 110, 253, 0.2);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  }
+  
+  #contact .form-control:focus {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(13, 110, 253, 0.6);
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3),
+                0 0 0 3px rgba(13, 110, 253, 0.1),
+                inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    outline: none;
+  }
+  
+  /* Floating labels with smooth transition */
+  #contact .form-floating > label {
+    color: rgba(108, 117, 125, 0.8);
+    transition: all 0.3s ease;
+  }
+  
+  #contact .form-floating > .form-control:focus ~ label,
+  #contact .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: rgba(13, 110, 253, 0.9);
+    transform: scale(0.95);
+  }
+  
+  /* 3D Button with gradient and hover effect */
+  #contact .btn-outline-light {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.9) 0%, rgba(108, 117, 125, 0.8) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: perspective(500px) translateZ(0);
+  }
+  
+  #contact .btn-outline-light::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+  
+  #contact .btn-outline-light:hover::before {
+    left: 100%;
+  }
+  
+  #contact .btn-outline-light:hover {
+    transform: perspective(500px) translateY(-5px) translateZ(20px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.6),
+                0 0 0 2px rgba(255, 255, 255, 0.2) inset,
+                0 15px 40px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(13, 110, 253, 1) 0%, rgba(108, 117, 125, 0.9) 100%);
+  }
+  
+  #contact .btn-outline-light:active {
+    transform: perspective(500px) translateY(-2px) translateZ(10px) scale(1.02);
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.5);
+  }
+  
+  /* Enhanced title with 3D text effect */
+  #contact h2 {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5),
+                 0 0 20px rgba(13, 110, 253, 0.3),
+                 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 3px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  
+  #contact h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, rgba(13, 110, 253, 0.8), transparent);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.6);
+  }
+  
+  /* Enhanced subtitle */
+  #contact h5 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+  }
+  
+  /* Success/Error message styling */
+  #contact #formMessage {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.4s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 3D Footer */
+  footer {
+    background: linear-gradient(135deg, rgba(33, 37, 41, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem 0;
+  }
+  
+  footer p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    #contact form {
+      padding: 2rem 1.5rem;
+      margin: 1rem 0;
+    }
+    
+    #contact .btn-outline-light {
+      padding: 0.875rem 2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card,
+    #portfolio .card-wrapper {
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
+
