@@ -735,6 +735,28 @@
   
   /* Tablets and below (768px) */
   @media screen and (max-width: 767.98px) {
+    /* Fix container padding balance */
+    .container,
+    .container-xxl,
+    .container-fluid {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Fix Bootstrap row negative margins */
+    .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    
+    /* Ensure columns have balanced padding */
+    [class*="col-"] {
+      padding-left: 0.75rem !important;
+      padding-right: 0.75rem !important;
+    }
+    
     /* Navigation */
     .navbar-brand {
       font-size: 1.25rem !important;
@@ -1000,6 +1022,19 @@
   
   /* Mobile Phones (576px and below) */
   @media screen and (max-width: 575.98px) {
+    /* Balanced padding for small screens */
+    .container,
+    .container-xxl,
+    .container-fluid {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    
+    .row > * {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    
     /* Navigation */
     .navbar-brand {
       font-size: 1.1rem !important;
@@ -1117,6 +1152,19 @@
   
   /* Extra Small Devices (400px and below) */
   @media screen and (max-width: 400px) {
+    /* Balanced padding for extra small screens */
+    .container,
+    .container-xxl,
+    .container-fluid {
+      padding-left: 0.75rem !important;
+      padding-right: 0.75rem !important;
+    }
+    
+    .row > * {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+    
     .hero h1 {
       font-size: 1.5rem !important;
     }
@@ -1190,10 +1238,26 @@
       padding: 2rem 0 !important;
     }
     
+    /* Balanced container padding for mobile */
     .container,
-    .container-xxl {
-      padding-left: 1rem;
-      padding-right: 1rem;
+    .container-xxl,
+    .container-fluid {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Ensure rows don't have negative margins causing overflow */
+    .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    
+    /* Fix column padding to be balanced */
+    .row > * {
+      padding-left: 0.75rem !important;
+      padding-right: 0.75rem !important;
     }
     
     /* Contact form mobile layout */
@@ -1240,6 +1304,12 @@
       overflow-x: hidden;
     }
     
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
     * {
       max-width: 100%;
     }
@@ -1247,6 +1317,20 @@
     img {
       max-width: 100%;
       height: auto;
+    }
+    
+    /* Ensure all sections respect container boundaries */
+    section {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    /* Fix any elements that might cause overflow */
+    .navbar,
+    header,
+    footer {
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 
