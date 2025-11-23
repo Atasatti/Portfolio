@@ -707,7 +707,7 @@ export default function Home() {
             <div className="col-12">
               <form id="contactForm" onSubmit={handleSubmit}>
                 <div className="row d-flex justify-content-center">
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 col-12">
                     <div className="form-floating mb-3">
                       <input type="text" className="form-control" id="floatingInput" name="name" placeholder="Enter Name*" autoComplete="name" required />
                       <label htmlFor="floatingInput">Enter Name*</label>
@@ -721,11 +721,13 @@ export default function Home() {
                       <label htmlFor="floatingPhone">Enter Phone*</label>
                     </div>
                   </div>
-                  <div className="form-floating col-lg-6">
-                    <textarea className="form-control" placeholder="Enter Message*" id="floatingMessage" name="message" style={{height: '205px'}} required></textarea>
-                    <label htmlFor="floatingMessage">Enter Message*</label>
+                  <div className="col-lg-6 col-12">
+                    <div className="form-floating mb-3">
+                      <textarea className="form-control" placeholder="Enter Message*" id="floatingMessage" name="message" style={{height: '205px'}} required></textarea>
+                      <label htmlFor="floatingMessage">Enter Message*</label>
+                    </div>
                   </div>
-                  <div className="col-12 mt-5 d-flex justify-content-center">
+                  <div className="col-12 mt-4 mt-lg-5 d-flex justify-content-center">
                     <button type="submit" className="btn btn-lg btn-outline-light">SEND MESSAGE</button>
                   </div>
                   {formMessage && (
