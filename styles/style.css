@@ -698,33 +698,555 @@
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   }
   
-  /* Responsive adjustments */
-  @media screen and (max-width: 768px) {
-    #contact form {
-      padding: 2rem 1.5rem;
+  /* ============================================
+     MOBILE RESPONSIVE STYLES
+     ============================================ */
+  
+  /* Large Tablets and below (992px) */
+  @media screen and (max-width: 991.98px) {
+    /* Skills Section */
+    #skills .card {
+      width: 100% !important;
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    
+    #skills .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Portfolio Section */
+    #portfolio .card {
+      min-height: auto;
+      margin-bottom: 1.5rem;
+    }
+    
+    #portfolio .card-body {
+      min-height: auto;
+      padding: 1.25rem;
+    }
+    
+    #portfolio .card-text {
+      max-height: none;
+      -webkit-line-clamp: 6;
+    }
+  }
+  
+  /* Tablets and below (768px) */
+  @media screen and (max-width: 767.98px) {
+    /* Navigation */
+    .navbar-brand {
+      font-size: 1.25rem !important;
+    }
+    
+    .nav-item .nav-link {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background-attachment: scroll !important;
+      background-position: center center;
+      min-height: 80vh;
+      padding-top: 80px;
+    }
+    
+    .hero h1 {
+      font-size: 2rem !important;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    
+    .hero h2 {
+      font-size: 1.75rem !important;
+      line-height: 1.3;
+      letter-spacing: 0.5px;
+    }
+    
+    .hero .btn-primary {
+      padding: 0.75rem 2rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    
+    /* Section Headings */
+    section h2 {
+      font-size: 2rem !important;
+      margin-bottom: 1rem;
+    }
+    
+    section h5 {
+      font-size: 1rem !important;
+      padding: 0.5rem 1rem;
+    }
+    
+    /* Skills Section */
+    #skills {
+      padding: 2rem 0 !important;
+    }
+    
+    #skills .card {
+      width: 100% !important;
       margin: 1rem 0;
+      padding: 1.5rem;
+    }
+    
+    #skills i {
+      height: 80px;
+      width: 80px;
+      font-size: 1.5rem;
+    }
+    
+    #skills .card-title {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+    
+    #skills .card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    /* Portfolio Section */
+    #portfolio {
+      padding: 2rem 0 !important;
+    }
+    
+    #portfolio .card {
+      min-height: auto;
+      margin-bottom: 1.5rem;
+    }
+    
+    #portfolio img.portfolio-img {
+      height: 200px !important;
+    }
+    
+    #portfolio .card-title {
+      font-size: 1rem;
+      min-height: auto;
+      margin-bottom: 0.5rem;
+    }
+    
+    #portfolio .card-text {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      min-height: auto;
+      max-height: none;
+      -webkit-line-clamp: 5;
+      margin-bottom: 1rem;
+    }
+    
+    #portfolio .btn-outline-primary,
+    #portfolio .btn-outline-secondary {
+      padding: 0.4rem 1rem;
+      font-size: 0.85rem;
+    }
+    
+    /* About Section */
+    #about {
+      padding: 2rem 0 !important;
+    }
+    
+    #about .row {
+      margin: 1.5rem 0 !important;
+    }
+    
+    #about img {
+      width: 100px !important;
+      margin-bottom: 1rem;
+    }
+    
+    #about .col-9,
+    #about .col-md-5 {
+      text-align: center !important;
+    }
+    
+    #about h5 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    #about p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    #about .hire-text h2 {
+      height: 80px;
+      width: 80px;
+      font-size: 0.9rem !important;
+      padding: 0.5rem;
+    }
+    
+    /* CV Section */
+    #cv {
+      padding: 2rem 0 !important;
+    }
+    
+    #cv img {
+      width: 180px;
+      margin-bottom: 1.5rem;
+    }
+    
+    #cv h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    #cv h3 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    
+    #cv h5 {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    #cv ul {
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+    
+    #cv .contact-info li {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    #cv .social-icons {
+      margin: 1.5rem 0;
+    }
+    
+    /* Contact Section */
+    #contact {
+      background-attachment: scroll !important;
+      min-height: auto;
+      padding: 2rem 0;
+    }
+    
+    #contact .container-xxl {
+      padding: 2rem 0;
+    }
+    
+    #contact h2 {
+      font-size: 1.75rem !important;
+      letter-spacing: 2px;
+      margin-bottom: 0.75rem;
+    }
+    
+    #contact h5 {
+      font-size: 0.95rem !important;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+    
+    #contact form {
+      padding: 1.5rem 1rem;
+      margin: 1rem 0;
+      border-radius: 16px;
+    }
+    
+    #contact form:hover {
+      transform: none;
+    }
+    
+    #contact .form-floating {
+      margin-bottom: 1rem;
+    }
+    
+    #contact .form-control {
+      padding: 0.875rem 1rem;
+      font-size: 0.95rem;
+    }
+    
+    #contact .form-floating > label {
+      font-size: 0.95rem;
+      padding: 0.875rem 1rem;
+    }
+    
+    #contact textarea.form-control {
+      min-height: 150px;
     }
     
     #contact .btn-outline-light {
       padding: 0.875rem 2rem;
       font-size: 0.9rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    /* Footer */
+    footer {
+      padding: 1rem 0;
+      text-align: center;
+    }
+    
+    footer .container-xxl {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    footer p {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    footer .social-icons {
+      justify-content: center;
     }
   }
   
-  @media screen and (max-width: 990px) {
+  /* Mobile Phones (576px and below) */
+  @media screen and (max-width: 575.98px) {
+    /* Navigation */
+    .navbar-brand {
+      font-size: 1.1rem !important;
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 70vh;
+      padding-top: 70px;
+    }
+    
+    .hero h1 {
+      font-size: 1.75rem !important;
+    }
+    
+    .hero h2 {
+      font-size: 1.5rem !important;
+      line-height: 1.2;
+    }
+    
+    .hero .btn-primary {
+      padding: 0.625rem 1.5rem;
+      font-size: 0.85rem;
+      width: 90%;
+      max-width: 250px;
+    }
+    
+    /* Section Headings */
+    section h2 {
+      font-size: 1.75rem !important;
+    }
+    
+    section h5 {
+      font-size: 0.9rem !important;
+      padding: 0.5rem;
+    }
+    
+    /* Skills Section */
     #skills .card {
-      width: calc(100% / 2 - 10px) !important;
+      padding: 1.25rem;
+    }
+    
+    #skills i {
+      height: 70px;
+      width: 70px;
+      font-size: 1.25rem;
+    }
+    
+    /* Portfolio Section */
+    #portfolio img.portfolio-img {
+      height: 180px !important;
+    }
+    
+    #portfolio .card-body {
+      padding: 1rem;
+    }
+    
+    #portfolio .card-text {
+      font-size: 0.8rem;
+      -webkit-line-clamp: 4;
+    }
+    
+    /* About Section */
+    #about img {
+      width: 80px !important;
+    }
+    
+    #about .hire-text h2 {
+      height: 60px;
+      width: 60px;
+      font-size: 0.75rem !important;
+    }
+    
+    /* CV Section */
+    #cv img {
+      width: 150px;
+    }
+    
+    #cv h2 {
+      font-size: 1.25rem;
+    }
+    
+    #cv .col-lg-4 {
+      margin-bottom: 2rem;
+    }
+    
+    /* Contact Section */
+    #contact h2 {
+      font-size: 1.5rem !important;
+      letter-spacing: 1px;
+    }
+    
+    #contact h5 {
+      font-size: 0.85rem !important;
+    }
+    
+    #contact form {
+      padding: 1.25rem 0.75rem;
+    }
+    
+    #contact .form-control {
+      padding: 0.75rem 0.875rem;
+      font-size: 0.9rem;
+    }
+    
+    #contact textarea.form-control {
+      min-height: 120px;
+    }
+    
+    #contact .btn-outline-light {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.85rem;
     }
   }
   
-  @media screen and (max-width: 668px) {
-    #skills .card,
-    #portfolio .card-wrapper {
-      width: 100% !important;
+  /* Extra Small Devices (400px and below) */
+  @media screen and (max-width: 400px) {
+    .hero h1 {
+      font-size: 1.5rem !important;
     }
-   #about .hire-text h2 {
-     height: 70px;
-     width: 70px;
-   }
+    
+    .hero h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    section h2 {
+      font-size: 1.5rem !important;
+    }
+    
+    #contact h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    #contact form {
+      padding: 1rem 0.5rem;
+    }
+    
+    #contact .form-control {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Landscape Orientation on Mobile */
+  @media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+      min-height: 100vh;
+      padding-top: 60px;
+    }
+    
+    .hero h1 {
+      font-size: 1.5rem !important;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero h2 {
+      font-size: 1.25rem !important;
+    }
+    
+    .hero .btn-primary {
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  
+  /* Mobile Touch Improvements */
+  @media screen and (max-width: 767.98px) {
+    /* Better touch targets */
+    .btn,
+    .nav-link,
+    .navbar-toggler {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* Prevent text selection on buttons for better UX */
+    .btn {
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Better spacing for mobile */
+    section {
+      padding: 2rem 0 !important;
+    }
+    
+    .container,
+    .container-xxl {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    /* Contact form mobile layout */
+    #contact .col-lg-6 {
+      margin-bottom: 0;
+    }
+    
+    #contact .form-floating.col-lg-6 {
+      margin-top: 1rem;
+    }
+    
+    /* Portfolio card spacing */
+    #portfolio .card-wrapper {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Skills card spacing */
+    #skills .card {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* About section spacing */
+    #about .row {
+      padding: 1rem 0;
+    }
+    
+    /* CV section mobile layout */
+    #cv .col-lg-4,
+    #cv .col-lg-7 {
+      margin-bottom: 2rem;
+    }
+    
+    /* Footer mobile */
+    footer .social-icons a {
+      width: 35px;
+      height: 35px;
+      margin: 0 0.5rem;
+    }
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  @media screen and (max-width: 767.98px) {
+    body {
+      overflow-x: hidden;
+    }
+    
+    * {
+      max-width: 100%;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
