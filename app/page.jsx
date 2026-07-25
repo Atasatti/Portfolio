@@ -549,10 +549,10 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="education-list">
+          <div className="education-list" aria-label="Education history">
             <article className="education-entry">
               <span className="education-year">Feb 2022—Feb 2026</span>
-              <div>
+              <div className="education-degree">
                 <p>Bachelor&apos;s degree</p>
                 <h3>Data Science</h3>
               </div>
@@ -564,7 +564,7 @@ export default function Home() {
 
             <article className="education-entry">
               <span className="education-year">Aug 2018—Sep 2020</span>
-              <div>
+              <div className="education-degree">
                 <p>Higher secondary</p>
                 <h3>HSSC</h3>
               </div>
@@ -576,7 +576,7 @@ export default function Home() {
 
             <article className="education-entry">
               <span className="education-year">Mar 2016—Aug 2018</span>
-              <div>
+              <div className="education-degree">
                 <p>Secondary school</p>
                 <h3>SSC</h3>
               </div>
