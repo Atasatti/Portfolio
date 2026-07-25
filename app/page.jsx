@@ -145,39 +145,6 @@ const archiveProjects = [
     stack: "FastAPI · MongoDB Atlas · Jinja2",
     link: "https://github.com/Atasatti/Voyage_Vista",
   },
-  {
-    number: "11",
-    name: "Pizza Delivery Management",
-    label: "Backend engineering",
-    description:
-      "A REST API system for managing customers, orders, and the end-to-end pizza delivery workflow.",
-    image: "/pizza-delivery.jpg",
-    imageAlt: "Pizza delivery management project",
-    stack: "FastAPI · Python · REST · CRUD",
-    link: "https://github.com/Atasatti?tab=repositories",
-  },
-  {
-    number: "12",
-    name: "Tourism Management System",
-    label: "Python application",
-    description:
-      "A CLI-based tourism management application using structured file storage and regular-expression validation.",
-    image: "/tourism-management-system.png",
-    imageAlt: "Tourism management system interface",
-    stack: "Python · File Handling · Regex",
-    link: "https://github.com/Atasatti/Tourism-Management-System",
-  },
-  {
-    number: "13",
-    name: "E-commerce Website",
-    label: "Web development",
-    description:
-      "A customized online store with product listings, cart, checkout, responsive behavior, and foundational SEO.",
-    image: "/website.png",
-    imageAlt: "E-commerce website interface",
-    stack: "WordPress · WooCommerce · SEO",
-    link: "https://github.com/Atasatti?tab=repositories",
-  },
 ];
 
 const capabilityGroups = [
@@ -226,6 +193,7 @@ export default function Home() {
           <a href="#archive">Archive</a>
           <a href="#expertise">Expertise</a>
           <a href="#about">About</a>
+          <a href="#education">Education</a>
         </nav>
 
         <a className="nav-cta" href="mailto:atasatti20@gmail.com">
@@ -239,6 +207,7 @@ export default function Home() {
             <a href="#archive">Archive</a>
             <a href="#expertise">Expertise</a>
             <a href="#about">About</a>
+            <a href="#education">Education</a>
             <a href="mailto:atasatti20@gmail.com">Email me ↗</a>
           </div>
         </details>
@@ -410,13 +379,13 @@ export default function Home() {
 
           <div className="archive-heading" id="archive">
             <div>
-              <p className="section-kicker">Earlier work · The foundation</p>
-              <h3>Where the range began.</h3>
+              <p className="section-kicker">Earlier work · Selected</p>
+              <h3>The foundations.</h3>
             </div>
             <p>
-              Earlier experiments across computer vision, analytics, backend
-              systems, and web development—the work that built the foundations
-              for today&apos;s AI products.
+              Four early projects that shaped the range behind today&apos;s
+              end-to-end AI systems—from vision and analytics to security and
+              full-stack delivery.
             </p>
           </div>
 
@@ -562,6 +531,29 @@ export default function Home() {
               <span>Engineer across model, backend, and interface</span>
             </div>
           </div>
+        </section>
+
+        <section className="education-section section-shell" id="education">
+          <div className="education-heading">
+            <p className="section-kicker">Education</p>
+            <h2>
+              Built on
+              <br />
+              <em>data science.</em>
+            </h2>
+          </div>
+
+          <article className="education-entry">
+            <span className="education-year">2022—Present</span>
+            <div>
+              <p>Bachelor&apos;s degree</p>
+              <h3>Data Science</h3>
+            </div>
+            <div className="education-meta">
+              <strong>COMSATS University Islamabad</strong>
+              <span>CGPA 3.7 / 4.0</span>
+            </div>
+          </article>
         </section>
 
         <section className="contact-section">
