@@ -88,24 +88,12 @@ const supportingProjects = [
   },
   {
     number: "06",
-    name: "NeuroVision AI",
-    label: "Computer vision",
-    description:
-      "MRI brain-tumor detection delivered through a production-ready inference service and a clear clinician-facing analysis interface.",
-    image: "/NeuroVision.jpeg",
-    imageAlt: "NeuroVision AI MRI analysis results",
-    stack: "YOLOv8 · PyTorch · FastAPI",
-    link: "https://github.com/Atasatti/NeuroVision-AI",
-    linkLabel: "View code",
-  },
-  {
-    number: "07",
     name: "Oscillation Records",
     label: "Full-stack music platform · Live",
     description:
       "A production platform for a Manchester independent record label, unifying artists, releases, streaming, submissions, accounts, analytics, and a full content-management backend.",
-    image: "/projects/oscillation-records.jpg",
-    imageAlt: "Oscillation Records music production studio",
+    image: "/projects/oscillation-records-logo.png",
+    imageAlt: "Oscillation Records logo",
     stack: "Next.js 15 · TypeScript · Prisma · MongoDB · NextAuth · AWS S3",
     credit: "Made using Claude + Codex",
     link: "https://www.oscillationrecords.com",
@@ -114,6 +102,17 @@ const supportingProjects = [
 ];
 
 const archiveProjects = [
+  {
+    number: "07",
+    name: "NeuroVision AI",
+    label: "Computer vision",
+    description:
+      "MRI brain-tumor detection delivered through a production-ready inference service and a clear clinician-facing analysis interface.",
+    image: "/NeuroVision.jpeg",
+    imageAlt: "NeuroVision AI MRI analysis results",
+    stack: "YOLOv8 · PyTorch · FastAPI",
+    link: "https://github.com/Atasatti/NeuroVision-AI",
+  },
   {
     number: "08",
     name: "Potato Disease Classifier",
@@ -138,17 +137,6 @@ const archiveProjects = [
   },
   {
     number: "10",
-    name: "Image & Data Cryptography",
-    label: "Applied security",
-    description:
-      "Cryptographic operations and image encryption/decryption using AES and custom numerical image-processing pipelines.",
-    image: "/cryptography.png",
-    imageAlt: "Image and data cryptography project",
-    stack: "Python · AES · NumPy · PIL · OpenCV",
-    link: "https://github.com/Atasatti?tab=repositories",
-  },
-  {
-    number: "11",
     name: "Voyage Vista",
     label: "Full-stack application",
     description:
