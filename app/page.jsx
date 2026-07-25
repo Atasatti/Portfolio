@@ -98,11 +98,24 @@ const supportingProjects = [
     link: "https://github.com/Atasatti/NeuroVision-AI",
     linkLabel: "View code",
   },
+  {
+    number: "07",
+    name: "Oscillation Records",
+    label: "Music platform · Live",
+    description:
+      "A full-stack digital home for a Manchester independent record label, bringing artists, releases, streaming, submissions, accounts, and audience insights into one experience.",
+    image: "/projects/oscillation-records.jpg",
+    imageAlt: "Oscillation Records music production studio",
+    stack: "Next.js · MongoDB Atlas · AWS · Vercel",
+    credit: "Made using Claude + Codex",
+    link: "https://www.oscillationrecords.com",
+    linkLabel: "Visit live site",
+  },
 ];
 
 const archiveProjects = [
   {
-    number: "07",
+    number: "08",
     name: "Potato Disease Classifier",
     label: "Computer vision",
     description:
@@ -113,7 +126,7 @@ const archiveProjects = [
     link: "https://github.com/Atasatti/Potato_disease_Classification",
   },
   {
-    number: "08",
+    number: "09",
     name: "Data Visualization & Analytics",
     label: "Business intelligence",
     description:
@@ -124,7 +137,7 @@ const archiveProjects = [
     link: "https://github.com/Atasatti/PowerBI_Dashboards",
   },
   {
-    number: "09",
+    number: "10",
     name: "Image & Data Cryptography",
     label: "Applied security",
     description:
@@ -135,7 +148,7 @@ const archiveProjects = [
     link: "https://github.com/Atasatti?tab=repositories",
   },
   {
-    number: "10",
+    number: "11",
     name: "Voyage Vista",
     label: "Full-stack application",
     description:
@@ -365,14 +378,19 @@ export default function Home() {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <p className="project-stack">{project.stack}</p>
-                <a
-                  className="text-link"
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {project.linkLabel} <Arrow />
-                </a>
+                <div className="support-actions">
+                  {project.credit && (
+                    <span className="project-credit">{project.credit}</span>
+                  )}
+                  <a
+                    className="text-link"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {project.linkLabel} <Arrow />
+                  </a>
+                </div>
               </article>
             ))}
           </div>
