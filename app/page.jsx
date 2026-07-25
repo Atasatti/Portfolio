@@ -101,12 +101,12 @@ const supportingProjects = [
   {
     number: "07",
     name: "Oscillation Records",
-    label: "Music platform · Live",
+    label: "Full-stack music platform · Live",
     description:
-      "A full-stack digital home for a Manchester independent record label, bringing artists, releases, streaming, submissions, accounts, and audience insights into one experience.",
+      "A production platform for a Manchester independent record label, unifying artists, releases, streaming, submissions, accounts, analytics, and a full content-management backend.",
     image: "/projects/oscillation-records.jpg",
     imageAlt: "Oscillation Records music production studio",
-    stack: "Next.js · MongoDB Atlas · AWS · Vercel",
+    stack: "Next.js 15 · TypeScript · Prisma · MongoDB · NextAuth · AWS S3",
     credit: "Made using Claude + Codex",
     link: "https://www.oscillationrecords.com",
     linkLabel: "Visit live site",
