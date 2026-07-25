@@ -1025,13 +1025,17 @@ h2 em {
   margin: 0;
 }
 
+.education-list {
+  border-top: 1px solid var(--line);
+}
+
 .education-entry {
   display: grid;
   grid-template-columns: 0.5fr 1.2fr 0.9fr;
   gap: 2rem;
   align-items: center;
   padding-block: 2.5rem;
-  border-block: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .education-year,

@@ -549,17 +549,43 @@ export default function Home() {
             </h2>
           </div>
 
-          <article className="education-entry">
-            <span className="education-year">2022—Present</span>
-            <div>
-              <p>Bachelor&apos;s degree</p>
-              <h3>Data Science</h3>
-            </div>
-            <div className="education-meta">
-              <strong>COMSATS University Islamabad</strong>
-              <span>CGPA 3.7 / 4.0</span>
-            </div>
-          </article>
+          <div className="education-list">
+            <article className="education-entry">
+              <span className="education-year">Feb 2022—Feb 2026</span>
+              <div>
+                <p>Bachelor&apos;s degree</p>
+                <h3>Data Science</h3>
+              </div>
+              <div className="education-meta">
+                <strong>COMSATS University Islamabad</strong>
+                <span>CGPA 3.65 / 4.0</span>
+              </div>
+            </article>
+
+            <article className="education-entry">
+              <span className="education-year">Aug 2018—Sep 2020</span>
+              <div>
+                <p>Higher secondary</p>
+                <h3>HSSC</h3>
+              </div>
+              <div className="education-meta">
+                <strong>F.G. Sir Syed College, Rawalpindi</strong>
+                <span>Grade A+</span>
+              </div>
+            </article>
+
+            <article className="education-entry">
+              <span className="education-year">Mar 2016—Aug 2018</span>
+              <div>
+                <p>Secondary school</p>
+                <h3>SSC</h3>
+              </div>
+              <div className="education-meta">
+                <strong>APSACS (FWO), Rawalpindi</strong>
+                <span>Grade A+</span>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section className="contact-section">
