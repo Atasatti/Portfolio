@@ -23,7 +23,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
+.env.*
+!.env.example
 .env*.local
+
+# cloud worker state
+.wrangler/
+dist/
 
 # vercel
 .vercel
@@ -31,4 +38,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
