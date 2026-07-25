@@ -178,17 +178,6 @@ const archiveProjects = [
     stack: "WordPress · WooCommerce · SEO",
     link: "https://github.com/Atasatti?tab=repositories",
   },
-  {
-    number: "14",
-    name: "Responsive Landing Page",
-    label: "Frontend foundations",
-    description:
-      "A mobile-first portfolio landing page built with responsive sections and reusable interface components.",
-    image: "/portfolio.png",
-    imageAlt: "Earlier responsive portfolio landing page",
-    stack: "HTML · CSS · Bootstrap",
-    link: "https://github.com/Atasatti?tab=repositories",
-  },
 ];
 
 const capabilityGroups = [
