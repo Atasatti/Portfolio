@@ -99,6 +99,97 @@ const supportingProjects = [
   },
 ];
 
+const archiveProjects = [
+  {
+    number: "07",
+    name: "Potato Disease Classifier",
+    label: "Computer vision",
+    description:
+      "A CNN classifier for Early Blight, Late Blight, and healthy potato leaves, delivered through an image-upload web interface.",
+    image: "/potato_disease.png",
+    imageAlt: "Potato leaf disease classification results",
+    stack: "Keras · FastAPI · OpenCV · NumPy",
+    link: "https://github.com/Atasatti/Potato_disease_Classification",
+  },
+  {
+    number: "08",
+    name: "Data Visualization & Analytics",
+    label: "Business intelligence",
+    description:
+      "Exploratory analysis, KPI dashboards, and custom visualizations for turning raw business data into clear decisions.",
+    image: "/visualisation.jpeg",
+    imageAlt: "Data visualization and analytics dashboard",
+    stack: "Power BI · Python · Matplotlib · Seaborn",
+    link: "https://github.com/Atasatti/PowerBI_Dashboards",
+  },
+  {
+    number: "09",
+    name: "Image & Data Cryptography",
+    label: "Applied security",
+    description:
+      "Cryptographic operations and image encryption/decryption using AES and custom numerical image-processing pipelines.",
+    image: "/cryptography.png",
+    imageAlt: "Image and data cryptography project",
+    stack: "Python · AES · NumPy · PIL · OpenCV",
+    link: "https://github.com/Atasatti?tab=repositories",
+  },
+  {
+    number: "10",
+    name: "Voyage Vista",
+    label: "Full-stack application",
+    description:
+      "A travel-management system with user and admin authentication, package CRUD, reviews, and feedback workflows.",
+    image: "/VyageVista.jpeg",
+    imageAlt: "Voyage Vista travel management interface",
+    stack: "FastAPI · MongoDB Atlas · Jinja2",
+    link: "https://github.com/Atasatti/Voyage_Vista",
+  },
+  {
+    number: "11",
+    name: "Pizza Delivery Management",
+    label: "Backend engineering",
+    description:
+      "A REST API system for managing customers, orders, and the end-to-end pizza delivery workflow.",
+    image: "/pizza-delivery.jpg",
+    imageAlt: "Pizza delivery management project",
+    stack: "FastAPI · Python · REST · CRUD",
+    link: "https://github.com/Atasatti?tab=repositories",
+  },
+  {
+    number: "12",
+    name: "Tourism Management System",
+    label: "Python application",
+    description:
+      "A CLI-based tourism management application using structured file storage and regular-expression validation.",
+    image: "/tourism-management-system.png",
+    imageAlt: "Tourism management system interface",
+    stack: "Python · File Handling · Regex",
+    link: "https://github.com/Atasatti/Tourism-Management-System",
+  },
+  {
+    number: "13",
+    name: "E-commerce Website",
+    label: "Web development",
+    description:
+      "A customized online store with product listings, cart, checkout, responsive behavior, and foundational SEO.",
+    image: "/website.png",
+    imageAlt: "E-commerce website interface",
+    stack: "WordPress · WooCommerce · SEO",
+    link: "https://github.com/Atasatti?tab=repositories",
+  },
+  {
+    number: "14",
+    name: "Responsive Landing Page",
+    label: "Frontend foundations",
+    description:
+      "A mobile-first portfolio landing page built with responsive sections and reusable interface components.",
+    image: "/portfolio.png",
+    imageAlt: "Earlier responsive portfolio landing page",
+    stack: "HTML · CSS · Bootstrap",
+    link: "https://github.com/Atasatti?tab=repositories",
+  },
+];
+
 const capabilityGroups = [
   {
     number: "01",
@@ -142,6 +233,7 @@ export default function Home() {
 
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#work">Work</a>
+          <a href="#archive">Archive</a>
           <a href="#expertise">Expertise</a>
           <a href="#about">About</a>
         </nav>
@@ -154,6 +246,7 @@ export default function Home() {
           <summary aria-label="Open navigation">Menu</summary>
           <div className="mobile-nav-panel">
             <a href="#work">Work</a>
+            <a href="#archive">Archive</a>
             <a href="#expertise">Expertise</a>
             <a href="#about">About</a>
             <a href="mailto:atasatti20@gmail.com">Email me ↗</a>
@@ -333,6 +426,47 @@ export default function Home() {
                   rel="noreferrer"
                 >
                   {project.linkLabel} <Arrow />
+                </a>
+              </article>
+            ))}
+          </div>
+
+          <div className="archive-heading" id="archive">
+            <div>
+              <p className="section-kicker">Earlier work · The foundation</p>
+              <h3>Where the range began.</h3>
+            </div>
+            <p>
+              Earlier experiments across computer vision, analytics, backend
+              systems, and web development—the work that built the foundations
+              for today&apos;s AI products.
+            </p>
+          </div>
+
+          <div className="archive-grid">
+            {archiveProjects.map((project) => (
+              <article className="archive-card" key={project.name}>
+                <div className="archive-image">
+                  <img
+                    src={project.image}
+                    alt={project.imageAlt}
+                    width="900"
+                    height="620"
+                    loading="lazy"
+                  />
+                  <span>{project.number}</span>
+                </div>
+                <p className="project-label">{project.label}</p>
+                <h4>{project.name}</h4>
+                <p className="archive-description">{project.description}</p>
+                <p className="project-stack">{project.stack}</p>
+                <a
+                  className="text-link"
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View project <Arrow />
                 </a>
               </article>
             ))}
