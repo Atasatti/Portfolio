@@ -80,7 +80,8 @@ const supportingProjects = [
     label: "Full-stack SaaS",
     description:
       "A live agency platform with a marketing site, role-based client portal, admin operations, analytics, project tracking, and invoicing.",
-    art: "orvia-studios",
+    image: "/projects/orvia-studios.jpg",
+    imageAlt: "Orvia Studios landing page",
     stack: "Next.js · MongoDB · NextAuth · Recharts · Vercel",
     link: "https://orvia-studios.vercel.app",
     linkLabel: "Visit live site",
@@ -393,26 +394,13 @@ export default function Home() {
             {supportingProjects.map((project) => (
               <article className="support-card" key={project.name}>
                 <div className="support-image">
-                  {project.art === "orvia-studios" ? (
-                    <div
-                      className="support-art"
-                      role="img"
-                      aria-label="Orvia Studios client and admin platform"
-                    >
-                      <span className="support-art-kicker">Live platform</span>
-                      <strong>ORVIA</strong>
-                      <strong>STUDIOS</strong>
-                      <i>CLIENT / ADMIN / ANALYTICS</i>
-                    </div>
-                  ) : (
-                    <img
-                      src={project.image}
-                      alt={project.imageAlt}
-                      width="1000"
-                      height="700"
-                      loading="lazy"
-                    />
-                  )}
+                  <img
+                    src={project.image}
+                    alt={project.imageAlt}
+                    width="1000"
+                    height="700"
+                    loading="lazy"
+                  />
                   <span>{project.number}</span>
                 </div>
                 <p className="project-label">{project.label}</p>
