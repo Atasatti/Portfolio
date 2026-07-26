@@ -27,6 +27,18 @@ export const metadata = {
   publisher: "Ata Ul Haq",
   alternates: {
     canonical: "/",
+    types: {
+      "text/plain": [
+        {
+          url: "/llms.txt",
+          title: "LLM-readable portfolio summary",
+        },
+        {
+          url: "/llms-full.txt",
+          title: "Full LLM-readable portfolio context",
+        },
+      ],
+    },
   },
   openGraph: {
     title,
@@ -64,6 +76,7 @@ export const metadata = {
     },
   },
   category: "technology",
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     shortcut: "/favicon.svg",
@@ -78,6 +91,10 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="me" href="https://github.com/Atasatti" />
+        <link rel="me" href="https://www.linkedin.com/in/ata-satti" />
+      </head>
       <body>{children}</body>
     </html>
   );

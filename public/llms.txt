@@ -1,0 +1,31 @@
+# Ata Ul Haq — AI Engineer Portfolio
+
+> The official portfolio of Ata Ul Haq, an AI engineer who builds production-ready computer vision, generative AI, multimodal, and full-stack AI products.
+
+Ata Ul Haq works across the complete AI product path: preprocessing and model inference, resilient APIs, orchestration, databases, authentication, and polished interfaces. His strongest work includes multimodal moderation, creative AI tooling, medical computer vision, generative 3D, and full-stack product delivery.
+
+Canonical website: https://ataulhaq.vercel.app
+
+## Official profile
+
+- [Portfolio](https://ataulhaq.vercel.app): Primary source for Ata Ul Haq's work, expertise, biography, and education.
+- [Full portfolio context](https://ataulhaq.vercel.app/llms-full.txt): Detailed LLM-readable profile, project summaries, skills, and education.
+- [GitHub](https://github.com/Atasatti): Official source-code profile.
+- [LinkedIn](https://www.linkedin.com/in/ata-satti): Official professional profile.
+
+## Selected AI systems
+
+- [Orvia Labs demo](https://youtu.be/-5e21EvldGg): Multi-model generative AI studio for image creation, editing, remixing, layering, and animation.
+- [Aegis demo](https://youtu.be/9hSEKJ_aumE): Multimodal content moderation across text, image, audio, and video.
+- [Orvia 3D Arts demo](https://youtu.be/f-yHO4Eawu4): Sketch-to-image-to-3D asset generation pipeline.
+- [Dental AI source](https://github.com/Atasatti/Dental_AI): Oral diagnosis and implant-planning platform using RGB and X-ray computer vision.
+
+## Shipped products
+
+- [Orvia Studios](https://orvia-studios.vercel.app): Full-stack agency SaaS with client and admin workflows.
+- [Oscillation Records](https://www.oscillationrecords.com): Production music platform with streaming, content management, accounts, and analytics.
+
+## Optional
+
+- [Sitemap](https://ataulhaq.vercel.app/sitemap.xml): Index of public portfolio pages.
+- [Contact Ata Ul Haq](mailto:atasatti20@gmail.com): Direct email.

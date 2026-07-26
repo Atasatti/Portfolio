@@ -2,6 +2,114 @@ import FoundationProjects from "./FoundationProjects";
 
 const siteUrl = "https://ataulhaq.vercel.app";
 
+const structuredProjects = [
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-orvia-labs`,
+    name: "Orvia Labs",
+    description:
+      "Multi-model creative studio for generating, refining, remixing, layering, and animating AI imagery.",
+    url: "https://youtu.be/-5e21EvldGg",
+    image: `${siteUrl}/projects/orvia-labs.jpg`,
+    keywords: ["Generative AI", "Next.js", "FastAPI", "Python"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-aegis`,
+    name: "Aegis",
+    description:
+      "Production-grade multimodal content-moderation system for text, image, audio, and video.",
+    url: "https://youtu.be/9hSEKJ_aumE",
+    image: `${siteUrl}/projects/aegis.jpg`,
+    keywords: ["Multimodal AI", "OpenAI", "FastAPI", "OpenCV"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-orvia-3d`,
+    name: "Orvia 3D Arts",
+    description:
+      "Sketch-to-asset pipeline that produces a photoreal image and interactive, exportable 3D model.",
+    url: "https://youtu.be/f-yHO4Eawu4",
+    image: `${siteUrl}/projects/orvia-3d.jpg`,
+    keywords: ["Generative 3D", "Gemini", "Hunyuan3D-2", "Three.js"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-dental-ai`,
+    name: "Dental AI",
+    description:
+      "End-to-end oral diagnosis and implant-planning platform with RGB and X-ray imaging pipelines.",
+    url: "https://github.com/Atasatti/Dental_AI",
+    image: `${siteUrl}/projects/dental-ai.jpg`,
+    keywords: ["Medical AI", "Computer Vision", "YOLOv11", "U-Net"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-orvia-studios`,
+    name: "Orvia Studios",
+    description:
+      "Full-stack agency platform with client portal, admin operations, analytics, project tracking, and invoicing.",
+    url: "https://orvia-studios.vercel.app",
+    image: `${siteUrl}/projects/orvia-studios.jpg`,
+    keywords: ["Next.js", "MongoDB", "NextAuth", "SaaS"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-oscillation-records`,
+    name: "Oscillation Records",
+    description:
+      "Production music platform for an independent record label with streaming, content management, accounts, and analytics.",
+    url: "https://www.oscillationrecords.com",
+    image: `${siteUrl}/projects/oscillation-records-logo.png`,
+    keywords: ["Next.js", "TypeScript", "MongoDB", "AWS S3"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-neurovision`,
+    name: "NeuroVision AI",
+    description:
+      "MRI brain-tumor detection delivered through a production-ready inference service.",
+    url: "https://github.com/Atasatti/NeuroVision-AI",
+    image: `${siteUrl}/NeuroVision.jpeg`,
+    keywords: ["Computer Vision", "YOLOv8", "PyTorch", "FastAPI"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-potato-disease`,
+    name: "Potato Disease Classifier",
+    description:
+      "CNN classifier for Early Blight, Late Blight, and healthy potato leaves.",
+    url: "https://github.com/Atasatti/Potato_disease_Classification",
+    image: `${siteUrl}/potato_disease.png`,
+    keywords: ["Computer Vision", "Keras", "FastAPI", "OpenCV"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-data-visualization`,
+    name: "Data Visualization & Analytics",
+    description:
+      "Exploratory analysis, KPI dashboards, and custom business-data visualizations.",
+    url: "https://github.com/Atasatti/PowerBI_Dashboards",
+    image: `${siteUrl}/visualisation.jpeg`,
+    keywords: ["Power BI", "Python", "Matplotlib", "Seaborn"],
+  },
+  {
+    "@type": "CreativeWork",
+    "@id": `${siteUrl}/#project-voyage-vista`,
+    name: "Voyage Vista",
+    description:
+      "Travel-management system with authentication, administration, package management, reviews, and feedback.",
+    url: "https://github.com/Atasatti/Voyage_Vista",
+    image: `${siteUrl}/VyageVista.jpeg`,
+    keywords: ["FastAPI", "MongoDB Atlas", "Jinja2"],
+  },
+].map((project) => ({
+  ...project,
+  creator: {
+    "@id": `${siteUrl}/#person`,
+  },
+}));
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -9,6 +117,7 @@ const structuredData = {
       "@type": "Person",
       "@id": `${siteUrl}/#person`,
       name: "Ata Ul Haq",
+      alternateName: "Atasatti",
       url: siteUrl,
       image: `${siteUrl}/profile-pic.jpg`,
       jobTitle: "AI Engineer",
@@ -59,13 +168,31 @@ const structuredData = {
       "@id": `${siteUrl}/#profile`,
       url: siteUrl,
       name: "Ata Ul Haq — AI Engineer",
+      dateModified: "2026-07-26",
       isPartOf: {
         "@id": `${siteUrl}/#website`,
       },
       mainEntity: {
         "@id": `${siteUrl}/#person`,
       },
+      hasPart: structuredProjects.map((project) => ({
+        "@id": project["@id"],
+      })),
     },
+    {
+      "@type": "ItemList",
+      "@id": `${siteUrl}/#projects`,
+      name: "Selected projects by Ata Ul Haq",
+      numberOfItems: structuredProjects.length,
+      itemListElement: structuredProjects.map((project, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@id": project["@id"],
+        },
+      })),
+    },
+    ...structuredProjects,
   ],
 };
 
@@ -283,7 +410,7 @@ export default function Home() {
               <span />
             </span>
           </summary>
-          <div className="mobile-nav-panel">
+          <nav className="mobile-nav-panel" aria-label="Mobile navigation">
             <a href="#work">Work</a>
             <a href="#archive">Archive</a>
             <a href="#expertise">Expertise</a>
@@ -292,7 +419,7 @@ export default function Home() {
             <a href="mailto:atasatti20@gmail.com">
               Email me <Arrow />
             </a>
-          </div>
+          </nav>
         </details>
       </header>
 

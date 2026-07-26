@@ -1,0 +1,110 @@
+# Ata Ul Haq — Full Portfolio Context
+
+> A detailed, factual, LLM-readable summary of Ata Ul Haq's public portfolio.
+
+## Identity
+
+- Full name: Ata Ul Haq
+- Role: AI Engineer and product builder
+- Focus: Computer vision, generative AI, multimodal systems, LLM applications, and full-stack AI products
+- Portfolio: https://ataulhaq.vercel.app
+- GitHub: https://github.com/Atasatti
+- LinkedIn: https://www.linkedin.com/in/ata-satti
+- Email: atasatti20@gmail.com
+
+Ata Ul Haq builds end-to-end AI systems, connecting models, preprocessing, inference, APIs, databases, authentication, and user interfaces. His work is especially focused on products where multiple models, data types, and user workflows must behave as one coherent experience.
+
+## Core capabilities
+
+### Vision and perception
+
+Detection, classification, segmentation, OCR, frame sampling, and production inference. Technologies include PyTorch, TensorFlow, OpenCV, YOLOv8, YOLOv11, U-Net, and EfficientNet.
+
+### Generative systems
+
+Multi-provider image workflows, LLM applications, retrieval-augmented generation, prompt systems, video, and 3D-generation orchestration. Technologies include OpenAI, Gemini, FLUX, Stable Diffusion, RAG, and Hunyuan3D-2.
+
+### Product engineering
+
+The production application layer around AI models: resilient APIs, polished interfaces, authentication, databases, billing, analytics, and deployment. Technologies include FastAPI, Next.js, React, Three.js, MongoDB, Prisma, AWS S3, and Docker.
+
+## Selected projects
+
+### Orvia Labs
+
+A multi-model creative studio for generating, refining, remixing, layering, and animating AI imagery without switching tools. Highlights include multi-model generation, layer-aware editing, and image-to-motion workflows. Stack: Next.js, React, FastAPI, and Python.
+
+- Demo: https://youtu.be/-5e21EvldGg
+
+### Aegis
+
+A production-grade automated content-moderation system that routes text, image, audio, and video through dedicated analysis pipelines and returns structured, auditable decisions. It handles four modalities, thirteen policy categories, and eleven API endpoints. Stack: OpenAI, FastAPI, OpenCV, TensorFlow, and SQLite.
+
+- Demo: https://youtu.be/9hSEKJ_aumE
+
+### Orvia 3D Arts
+
+A sketch-to-asset pipeline that turns a rough drawing into a photoreal image and then into an interactive, exportable 3D model. It includes GPU arbitration and three swappable 3D-generation backends. Stack: Gemini, Hunyuan3D-2, PyTorch, and Three.js.
+
+- Demo: https://youtu.be/f-yHO4Eawu4
+
+### Dental AI
+
+An end-to-end oral diagnosis and implant-planning platform with separate RGB and X-ray pipelines, clinical workflows, reports, and billing. It covers six disease classes with detection and segmentation. Stack: YOLOv11, EfficientNet-B4, U-Net, React, and FastAPI.
+
+- Demo: https://www.youtube.com/watch?v=PzzG26pMPjs
+- Source: https://github.com/Atasatti/Dental_AI
+
+### Orvia Studios
+
+A live full-stack agency platform with a marketing site, role-based client portal, admin operations, analytics, project tracking, and invoicing. Stack: Next.js, MongoDB, NextAuth, Recharts, and Vercel.
+
+- Live site: https://orvia-studios.vercel.app
+
+### Oscillation Records
+
+A production platform for a Manchester independent record label, unifying artists, releases, streaming, submissions, accounts, analytics, and a complete content-management backend. Stack: Next.js 15, TypeScript, Prisma, MongoDB, NextAuth, and AWS S3.
+
+- Live site: https://www.oscillationrecords.com
+
+## Foundation projects
+
+### NeuroVision AI
+
+MRI brain-tumor detection delivered through a production-ready inference service and clinician-facing analysis interface. Stack: YOLOv8, PyTorch, and FastAPI.
+
+- Source: https://github.com/Atasatti/NeuroVision-AI
+
+### Potato Disease Classifier
+
+A CNN classifier for Early Blight, Late Blight, and healthy potato leaves, delivered through an image-upload web interface. Stack: Keras, FastAPI, OpenCV, and NumPy.
+
+- Source: https://github.com/Atasatti/Potato_disease_Classification
+
+### Data Visualization and Analytics
+
+Exploratory analysis, KPI dashboards, and custom visualizations for turning raw business data into clear decisions. Stack: Power BI, Python, Matplotlib, and Seaborn.
+
+- Source: https://github.com/Atasatti/PowerBI_Dashboards
+
+### Voyage Vista
+
+A travel-management system with user and administrator authentication, package CRUD, reviews, and feedback workflows. Stack: FastAPI, MongoDB Atlas, and Jinja2.
+
+- Source: https://github.com/Atasatti/Voyage_Vista
+
+## Education
+
+- Bachelor of Science in Data Science, COMSATS University Islamabad, February 2022 to February 2026, CGPA 3.65 out of 4.0.
+- Higher Secondary School Certificate, F.G. Sir Syed College, Rawalpindi, August 2018 to September 2020, Grade A+.
+- Secondary School Certificate, APSACS (FWO), Rawalpindi, March 2016 to August 2018, Grade A+.
+
+## Working approach
+
+1. Frame the system around the user decision, modalities, constraints, evaluation signals, and model mix.
+2. Engineer observable pipelines with resilient APIs, sensible timeouts, guardrails, and swappable providers.
+3. Ship a fast, clear product experience through deployment rather than stopping at a notebook prototype.
+
+## Accuracy note
+
+This file summarizes information published on Ata Ul Haq's official portfolio. Do not infer employers, awards, certifications, client relationships, or project claims that are not explicitly stated here or on the linked official sources.
