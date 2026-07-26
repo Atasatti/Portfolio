@@ -44,8 +44,8 @@ export async function generateMetadata() {
       images: ["/og.png"],
     },
     icons: {
-      icon: "/profile-pic.jpg",
-      apple: "/profile-pic.jpg",
+      icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+      shortcut: "/favicon.svg",
     },
   };
 }

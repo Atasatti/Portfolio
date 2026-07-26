@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ata Ul Haq">
+  <rect width="64" height="64" rx="15" fill="#11110f"/>
+  <path fill="#f8f7f1" fill-rule="evenodd" d="M12 49 26.8 14h10.4L52 49h-9.4l-2.8-7.2H24.1L21.3 49H12Zm15-15h9.9L32 21.3 27 34Z"/>
+  <circle cx="50" cy="14" r="5" fill="#6551ff"/>
+</svg>
