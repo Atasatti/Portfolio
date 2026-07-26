@@ -1,3 +1,5 @@
+import FoundationProjects from "./FoundationProjects";
+
 const featuredProjects = [
   {
     number: "01",
@@ -395,34 +397,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="archive-grid">
-            {archiveProjects.map((project) => (
-              <article className="archive-card" key={project.name}>
-                <div className="archive-image">
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                    width="900"
-                    height="620"
-                    loading="lazy"
-                  />
-                  <span>{project.number}</span>
-                </div>
-                <p className="project-label">{project.label}</p>
-                <h4>{project.name}</h4>
-                <p className="archive-description">{project.description}</p>
-                <p className="project-stack">{project.stack}</p>
-                <a
-                  className="text-link"
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View project <Arrow />
-                </a>
-              </article>
-            ))}
-          </div>
+          <FoundationProjects projects={archiveProjects} />
         </section>
 
         <section className="expertise-section" id="expertise">
