@@ -1,5 +1,74 @@
 import FoundationProjects from "./FoundationProjects";
 
+const siteUrl = "https://ataulhaq.vercel.app";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Ata Ul Haq",
+      url: siteUrl,
+      image: `${siteUrl}/profile-pic.jpg`,
+      jobTitle: "AI Engineer",
+      description:
+        "AI engineer specializing in computer vision, generative AI, multimodal systems, and production-ready AI products.",
+      sameAs: [
+        "https://github.com/Atasatti",
+        "https://www.linkedin.com/in/ata-satti",
+      ],
+      knowsAbout: [
+        "Artificial Intelligence",
+        "Computer Vision",
+        "Generative AI",
+        "Multimodal AI",
+        "Large Language Models",
+        "Machine Learning",
+        "Full-stack product engineering",
+      ],
+      alumniOf: [
+        {
+          "@type": "CollegeOrUniversity",
+          name: "COMSATS University Islamabad",
+        },
+        {
+          "@type": "EducationalOrganization",
+          name: "F.G. Sir Syed College, Rawalpindi",
+        },
+        {
+          "@type": "EducationalOrganization",
+          name: "APSACS (FWO), Rawalpindi",
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Ata Ul Haq Portfolio",
+      description:
+        "Selected AI engineering, computer vision, generative AI, and full-stack product work by Ata Ul Haq.",
+      inLanguage: "en",
+      publisher: {
+        "@id": `${siteUrl}/#person`,
+      },
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${siteUrl}/#profile`,
+      url: siteUrl,
+      name: "Ata Ul Haq — AI Engineer",
+      isPartOf: {
+        "@id": `${siteUrl}/#website`,
+      },
+      mainEntity: {
+        "@id": `${siteUrl}/#person`,
+      },
+    },
+  ],
+};
+
 const featuredProjects = [
   {
     number: "01",
@@ -178,6 +247,13 @@ function Arrow() {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <a className="skip-link" href="#main">
         Skip to content
       </a>
@@ -236,9 +312,9 @@ export default function Home() {
             </h1>
             <div className="hero-intro">
               <p>
-                I turn ambitious AI ideas into reliable products—connecting
-                models, APIs, and thoughtful interfaces into systems people can
-                actually use.
+                I&apos;m Ata Ul Haq, an AI engineer who turns ambitious ideas
+                into reliable products—connecting models, APIs, and thoughtful
+                interfaces into systems people can actually use.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#work">
@@ -474,7 +550,7 @@ export default function Home() {
 
         <section className="about-section section-shell" id="about">
           <div className="about-label">
-            <p className="section-kicker">About Ata</p>
+            <p className="section-kicker">About Ata Ul Haq</p>
             <span>AI Engineer / Product builder</span>
           </div>
 

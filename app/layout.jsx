@@ -1,54 +1,79 @@
-import { headers } from "next/headers";
 import "./globals.css";
 
-export async function generateMetadata() {
-  const headerList = await headers();
-  const host = headerList.get("x-forwarded-host") || headerList.get("host");
-  const protocol = headerList.get("x-forwarded-proto") || "https";
-  const base = host ? `${protocol}://${host}` : "https://ata-ul-haq.dev";
+const siteUrl = "https://ataulhaq.vercel.app";
+const title = "Ata Ul Haq | AI Engineer & Computer Vision Specialist";
+const description =
+  "Portfolio of Ata Ul Haq, an AI engineer building production-ready computer vision, generative AI, multimodal, and full-stack AI products.";
 
-  return {
-    metadataBase: new URL(base),
-    title: "Ata Ul Haq — AI Engineer",
-    description:
-      "AI engineer building computer vision, generative AI, and multimodal products from model to interface.",
-    keywords: [
-      "Ata Ul Haq",
-      "AI Engineer",
-      "Computer Vision",
-      "Generative AI",
-      "LLM Applications",
-      "FastAPI",
-      "Next.js",
+export const metadata = {
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  applicationName: "Ata Ul Haq Portfolio",
+  keywords: [
+    "Ata Ul Haq",
+    "Ata Ul Haq AI Engineer",
+    "AI Engineer Pakistan",
+    "Computer Vision Engineer",
+    "Generative AI Engineer",
+    "Multimodal AI",
+    "LLM Applications",
+    "Machine Learning Engineer",
+    "FastAPI",
+    "Next.js",
+  ],
+  authors: [{ name: "Ata Ul Haq", url: siteUrl }],
+  creator: "Ata Ul Haq",
+  publisher: "Ata Ul Haq",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description,
+    url: siteUrl,
+    siteName: "Ata Ul Haq Portfolio",
+    locale: "en_US",
+    type: "profile",
+    firstName: "Ata Ul",
+    lastName: "Haq",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Ata Ul Haq — AI Engineer",
+      },
     ],
-    authors: [{ name: "Ata Ul Haq" }],
-    openGraph: {
-      title: "Ata Ul Haq — AI Engineer",
-      description:
-        "AI systems that see, reason, and ship — from model orchestration to polished products.",
-      type: "website",
-      images: [
-        {
-          url: "/og.png",
-          width: 1200,
-          height: 630,
-          alt: "Ata Ul Haq — AI Engineer",
-        },
-      ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
-    twitter: {
-      card: "summary_large_image",
-      title: "Ata Ul Haq — AI Engineer",
-      description:
-        "AI systems that see, reason, and ship — from model orchestration to polished products.",
-      images: ["/og.png"],
-    },
-    icons: {
-      icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
-      shortcut: "/favicon.svg",
-    },
-  };
-}
+  },
+  category: "technology",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+  },
+};
+
+export const viewport = {
+  themeColor: "#f2f0e8",
+  colorScheme: "light",
+};
 
 export default function RootLayout({ children }) {
   return (
