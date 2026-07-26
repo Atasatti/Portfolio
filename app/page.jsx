@@ -172,11 +172,7 @@ const capabilityGroups = [
 ];
 
 function Arrow() {
-  return (
-    <span aria-hidden="true" className="arrow">
-      ↗
-    </span>
-  );
+  return <span aria-hidden="true" className="arrow" />;
 }
 
 export default function Home() {
@@ -204,14 +200,22 @@ export default function Home() {
         </a>
 
         <details className="mobile-nav">
-          <summary aria-label="Open navigation">Menu</summary>
+          <summary aria-label="Open navigation">
+            <span className="menu-icon" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
+          </summary>
           <div className="mobile-nav-panel">
             <a href="#work">Work</a>
             <a href="#archive">Archive</a>
             <a href="#expertise">Expertise</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
-            <a href="mailto:atasatti20@gmail.com">Email me ↗</a>
+            <a href="mailto:atasatti20@gmail.com">
+              Email me <Arrow />
+            </a>
           </div>
         </details>
       </header>

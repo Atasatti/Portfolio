@@ -96,7 +96,7 @@ export default function FoundationProjects({ projects }) {
               target="_blank"
               rel="noreferrer"
             >
-              View project <span aria-hidden="true" className="arrow">↗</span>
+              View project <span aria-hidden="true" className="arrow" />
             </a>
           </article>
         ))}
