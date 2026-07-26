@@ -117,7 +117,8 @@ const structuredData = {
       "@type": "Person",
       "@id": `${siteUrl}/#person`,
       name: "Ata Ul Haq",
-      alternateName: "Atasatti",
+      alternateName: ["Ata Satti", "Atasatti"],
+      identifier: "Atasatti",
       url: siteUrl,
       image: `${siteUrl}/profile-pic.jpg`,
       jobTitle: "AI Engineer",
@@ -155,9 +156,10 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       url: siteUrl,
-      name: "Ata Ul Haq Portfolio",
+      name: "Ata Ul Haq",
+      alternateName: ["Ata Satti", "Ata Ul Haq Portfolio"],
       description:
-        "Selected AI engineering, computer vision, generative AI, and full-stack product work by Ata Ul Haq.",
+        "Official portfolio and selected AI engineering work by Ata Ul Haq, also known online as Ata Satti.",
       inLanguage: "en",
       publisher: {
         "@id": `${siteUrl}/#person`,
@@ -439,9 +441,10 @@ export default function Home() {
             </h1>
             <div className="hero-intro">
               <p>
-                I&apos;m Ata Ul Haq, an AI engineer who turns ambitious ideas
-                into reliable products—connecting models, APIs, and thoughtful
-                interfaces into systems people can actually use.
+                I&apos;m Ata Ul Haq—also known online as Ata Satti—an AI
+                engineer who turns ambitious ideas into reliable products,
+                connecting models, APIs, and thoughtful interfaces into systems
+                people can actually use.
               </p>
               <div className="hero-actions">
                 <a className="button button-dark" href="#work">
@@ -678,7 +681,7 @@ export default function Home() {
         <section className="about-section section-shell" id="about">
           <div className="about-label">
             <p className="section-kicker">About Ata Ul Haq</p>
-            <span>AI Engineer / Product builder</span>
+            <span>Ata Satti online · AI Engineer / Product builder</span>
           </div>
 
           <div className="about-copy">
@@ -783,7 +786,7 @@ export default function Home() {
             </a>
 
             <div className="contact-footer">
-              <p>AI Engineer · Computer Vision · Generative AI</p>
+              <p>Ata Ul Haq · Ata Satti · AI Engineer</p>
               <div>
                 <a
                   href="https://www.linkedin.com/in/ata-satti"

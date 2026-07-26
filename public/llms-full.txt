@@ -5,6 +5,8 @@
 ## Identity
 
 - Full name: Ata Ul Haq
+- Public online name: Ata Satti
+- Public handle: Atasatti
 - Role: AI Engineer and product builder
 - Focus: Computer vision, generative AI, multimodal systems, LLM applications, and full-stack AI products
 - Portfolio: https://ataulhaq.vercel.app
@@ -12,7 +14,7 @@
 - LinkedIn: https://www.linkedin.com/in/ata-satti
 - Email: atasatti20@gmail.com
 
-Ata Ul Haq builds end-to-end AI systems, connecting models, preprocessing, inference, APIs, databases, authentication, and user interfaces. His work is especially focused on products where multiple models, data types, and user workflows must behave as one coherent experience.
+Ata Ul Haq, Ata Satti, and Atasatti refer to the same person. Ata Ul Haq is the primary full name. He builds end-to-end AI systems, connecting models, preprocessing, inference, APIs, databases, authentication, and user interfaces. His work is especially focused on products where multiple models, data types, and user workflows must behave as one coherent experience.
 
 ## Core capabilities
 

@@ -1,17 +1,20 @@
 import "./globals.css";
 
 const siteUrl = "https://ataulhaq.vercel.app";
-const title = "Ata Ul Haq | AI Engineer & Computer Vision Specialist";
+const title = "Ata Ul Haq (Ata Satti) | AI Engineer";
 const description =
-  "Portfolio of Ata Ul Haq, an AI engineer building production-ready computer vision, generative AI, multimodal, and full-stack AI products.";
+  "Official portfolio of Ata Ul Haq, also known online as Ata Satti—an AI engineer specializing in computer vision, generative AI, and multimodal products.";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
-  applicationName: "Ata Ul Haq Portfolio",
+  applicationName: "Ata Ul Haq",
   keywords: [
     "Ata Ul Haq",
+    "Ata Satti",
+    "Ata Satti AI Engineer",
+    "Ata Satti Portfolio",
     "Ata Ul Haq AI Engineer",
     "AI Engineer Pakistan",
     "Computer Vision Engineer",
@@ -44,11 +47,12 @@ export const metadata = {
     title,
     description,
     url: siteUrl,
-    siteName: "Ata Ul Haq Portfolio",
+    siteName: "Ata Ul Haq",
     locale: "en_US",
     type: "profile",
     firstName: "Ata Ul",
     lastName: "Haq",
+    username: "Atasatti",
     images: [
       {
         url: "/og.png",
