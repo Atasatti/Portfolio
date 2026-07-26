@@ -1,4 +1,5 @@
 import FoundationProjects from "./FoundationProjects";
+import MobileNav from "./MobileNav";
 
 const siteUrl = "https://ataulhaq.vercel.app";
 
@@ -404,25 +405,7 @@ export default function Home() {
           Let&apos;s talk <Arrow />
         </a>
 
-        <details className="mobile-nav">
-          <summary aria-label="Open navigation">
-            <span className="menu-icon" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-            </span>
-          </summary>
-          <nav className="mobile-nav-panel" aria-label="Mobile navigation">
-            <a href="#work">Work</a>
-            <a href="#archive">Archive</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="mailto:atasatti20@gmail.com">
-              Email me <Arrow />
-            </a>
-          </nav>
-        </details>
+        <MobileNav />
       </header>
 
       <main id="main">
