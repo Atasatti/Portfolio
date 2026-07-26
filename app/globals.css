@@ -882,7 +882,7 @@ h2 em {
 }
 
 .approach {
-  padding-block: clamp(6rem, 12vw, 11rem);
+  padding-block: clamp(4.5rem, 8vw, 7rem);
 }
 
 .section-heading.compact {
@@ -890,7 +890,7 @@ h2 em {
 }
 
 .approach-grid {
-  margin-top: 6rem;
+  margin-top: 3.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
@@ -898,14 +898,14 @@ h2 em {
 }
 
 .approach-grid article {
-  min-height: 370px;
-  padding: 2rem 2.2rem 2.4rem 0;
+  min-height: 285px;
+  padding: 1.6rem 2rem 1.9rem 0;
   display: flex;
   flex-direction: column;
 }
 
 .approach-grid article + article {
-  padding-left: 2.2rem;
+  padding-left: 2rem;
   border-left: 1px solid var(--line);
 }
 
@@ -922,11 +922,11 @@ h2 em {
 
 .approach-grid h3 {
   font-size: clamp(2rem, 3vw, 3.2rem);
-  margin-top: auto;
+  margin-top: clamp(2.6rem, 4vw, 4rem);
 }
 
 .approach-grid p {
-  margin: 1.2rem 0 0;
+  margin: 0.9rem 0 0;
   max-width: 23rem;
   color: var(--muted);
 }
@@ -1353,8 +1353,8 @@ h2 em {
   }
 
   .approach-grid article {
-    min-height: 300px;
-    padding: 2rem 0;
+    min-height: 0;
+    padding: 1.7rem 0 2rem;
   }
 
   .approach-grid article + article {
