@@ -29,7 +29,7 @@ export const metadata = {
   creator: "Ata Ul Haq",
   publisher: "Ata Ul Haq",
   verification: {
-    google: "reihA8Wbe5z3ym_N5-J8JmZ0oqpwX8qY5QdLSH8a0LQ",
+    google: "fOvT2VxqC_wOWIVxoLUcVjMSgTriw0q0XYHWByOZe0s",
   },
   alternates: {
     canonical: "/",
