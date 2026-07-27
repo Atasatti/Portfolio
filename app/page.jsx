@@ -171,7 +171,7 @@ const structuredData = {
       "@id": `${siteUrl}/#profile`,
       url: siteUrl,
       name: "Ata Ul Haq — AI Engineer",
-      dateModified: "2026-07-26",
+      dateModified: "2026-07-27T11:13:10Z",
       isPartOf: {
         "@id": `${siteUrl}/#website`,
       },
