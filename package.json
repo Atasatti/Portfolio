@@ -2,6 +2,7 @@
   "name": "ata-ul-haq-portfolio",
   "version": "2.0.0",
   "private": true,
+  "license": "UNLICENSED",
   "description": "Portfolio of Ata Ul Haq, AI engineer building computer vision and generative AI products.",
   "type": "module",
   "engines": {
