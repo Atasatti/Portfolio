@@ -36,10 +36,6 @@ secrets/
 *.p12
 *.pfx
 
-# cloud worker state
-.wrangler/
-dist/
-
 # vercel
 .vercel
 
