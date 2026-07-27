@@ -28,6 +28,14 @@ yarn-error.log*
 !.env.example
 .env*.local
 
+# credentials and private key material
+credentials.json
+service-account*.json
+secrets/
+*.key
+*.p12
+*.pfx
+
 # cloud worker state
 .wrangler/
 dist/
